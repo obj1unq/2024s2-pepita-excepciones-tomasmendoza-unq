@@ -5,9 +5,7 @@ object pepita {
     energia += comida.energiaQueAporta()
   }
   
-  method validarVuelo(distancia) {
-    energia > self.energiaAGastar(distancia)
-  }
+  method validarVuelo(distancia) = energia > self.energiaAGastar(distancia)
   
   method volar(distancia) {
     energia -= self.energiaAGastar(distancia)
