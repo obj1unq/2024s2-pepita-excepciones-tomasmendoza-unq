@@ -1,0 +1,8 @@
+import pepita.*
+describe "excepcions" {
+  test "milena tiene a pepita y a pepon, con sus respectivas energias iniciales (100 y 30)" {
+    milena.movilizarAves(4)
+    assert.throwsException({ milena.movilizarAves(6) })
+    assert.throwsException({ milena.movilizarAves(100) })
+  }
+}
