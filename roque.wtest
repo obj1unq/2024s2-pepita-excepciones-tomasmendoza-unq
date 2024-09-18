@@ -1,0 +1,16 @@
+import pepita.*
+
+describe "roque" {
+  test "tiene a pepona con energía de 30, y recibe el mensaje alimentar(alpiste) pepon queda con 40 de energía" {
+    roque.ave(pepon)
+    roque.alimentar(alpiste)
+
+    assert.equals(70, roque.energia())
+  }
+
+  test "tiene a pepita con energía de 100 y recibe el mensaje alimentar(alpiste) pepita queda con 120 de energía." {
+    roque.alimentar(alpiste)
+
+    assert.equals(120, roque.energia())
+  }
+}
